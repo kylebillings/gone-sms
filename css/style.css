@@ -339,6 +339,7 @@ path:hover {
   margin: 30px auto;
   width: 250px;
   height: 250px;
+  margin-bottom: 60px;
 }
 
 /* COLORS */
@@ -402,9 +403,46 @@ span.dot {
   text-align: left;
   color: #eee;
 }
-
+.text-center {
+  text-align: center;
+}
 @media screen and (max-width: 1000px) {
   
   /*.fixed {display: none;}*/
-  
+
 }
+/* ## FAQ CSS ## */
+.faq-container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #fff;
+}
+.faq-container a {
+  text-decoration: none;
+}
+.faq-container ul {
+  list-style: none;
+  padding: 0;
+}
+.faq-container ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+.faq-container ul .inner.show {
+  /*display: block;*/
+}
+.faq-container ul li {
+  margin: .5em 0;
+}
+.faq-container ul li a.toggle {
+  display: block;
+  color: #fff;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+.faq-container ul li a.toggle:hover {
+  background: rgba(68,182,255,.7);
+}
+/* ## FAQ CSS ## */

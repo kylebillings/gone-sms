@@ -81,6 +81,6 @@ $(function() {
 		}
 	}
 	qtpie.init({
-    defaultMsg : null;
+    defaultMsg : " "
   });
 });

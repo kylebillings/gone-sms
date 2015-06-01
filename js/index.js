@@ -35,7 +35,8 @@ angular.module('chat', [])
         $scope.triggerSubmit = function() {
             $scope.addMessage();
 
-            window.scrollTo(0,document.body.scrollHeight);
+            //window.scrollTo(0,document.body.scrollHeight);
+            $("html, body").animate({ scrollTop: $(document).height()-$(window).height(), duration: 3600, easing: "easeInOutBounce"});
         }
 
     }])
