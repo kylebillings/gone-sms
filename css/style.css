@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Omnes';
+    src: url('../fonts/_light-webfont.eot');
+    src: url('../fonts/omnes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-webfont.woff') format('woff'),
+         url('../fonts/omnes-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesMedium';
+    src: url('../fonts/_light-webfont.eot');
+    src: url('../fonts/omnes_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_medium-webfont.woff') format('woff'),
+         url('../fonts/omnes_medium-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_medium-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesLight';
+    src: url('../fonts/omnes_light-webfont.eot');
+    src: url('../fonts/omnes_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_light-webfont.woff') format('woff'),
+         url('../fonts/omnes_light-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_light-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OmnesThin';
+    src: url('../fonts/omnes_extralight-webfont.eot');
+    src: url('../fonts/omnes_extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_extralight-webfont.woff') format('woff'),
+         url('../fonts/omnes_extralight-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_extralight-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OmnesHairline';
+    src: url('../fonts/omnes-hairline-webfont.eot');
+    src: url('../fonts/omnes-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-hairline-webfont.woff') format('woff'),
+         url('../fonts/omnes-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-hairline-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+textarea, input {
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+html, body {
+  font-family: "Omnes", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  color: #546979;
+  height: 100%;
+}
+html a, body a {
+  text-decoration: none;
+  color: #546979;
+}
+html p, body p {
+  line-height: 1.3em;
+}
+
+h1 {
+  font-family: "OmnesHairline";
+  font-weight: 200;
+  font-size: 6em;
+}
+
+h2 {
+  font-family: "OmnesThin";
+  font-weight: 100;
+  font-size: 4em; 
+}
+h3 {
+  font-family: "OmnesThin";
+}
+
+/* Hero Image Stack */
+.hero {
+  text-align: center;
+}
+.hero h1 {
+  line-height: 1em;
+  margin-top: 50px;
+  margin-bottom: 5px; 
+  color: #44b6ff;
+}
+.hero-images {
+  margin: 0 auto;
+  top: 50px;
+  width: 206px;
+  height: 250px;
+  overflow: visible;
+  position: relative;
+}
+
+.gone-hero-1 {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+.gone-hero-2 {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.intro {
+  color: #fff;
+}
+
+.blue-gradient {
+    background: #a0daff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iI2EwZGFmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NGI2ZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #a0daff 7%, #44b6ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7%,#a0daff), color-stop(100%,#44b6ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a0daff 7%,#44b6ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a0daff 7%,#44b6ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a0daff 7%,#44b6ff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a0daff 7%,#44b6ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0daff', endColorstr='#44b6ff',GradientType=0 ); /* IE6-8 */
+}
+
+.iphone-1 {
+  width: 100%;
+  padding: 30px;
+}
+
+.chat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Messages */
+.messages {
+  padding-top: 40px;
+  padding-bottom: 75px;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.message-remote {
+  position: relative;
+  max-width: 45%;
+  padding: 0px 15px;
+  margin: 0em 1em;
+  margin-bottom: 5px;
+  color: #546979;
+  background: #e6e6e6;
+  border-radius: 4px;
+  float: left;
+  clear: both;
+}
+.message-remote:before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: .6em solid transparent;
+  /* arrow size */
+  border-right-color: #e6e6e6;
+  /* arrow color */
+  /* positioning */
+  position: absolute;
+  bottom: 15px;
+  left: -1em;
+}
+
+.message-local {
+  position: relative;
+  max-width: 45%;
+  padding: 0px 10px;
+  margin: 0em 2em;
+  margin-bottom: 5px;
+  color: white;
+  background: #44b6ff;
+  border-radius: 4px;
+  float: right;
+  clear: both;
+}
+.message-local:before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: .6em solid transparent;
+  /* arrow size */
+  border-left-color: #44b6ff;
+  /* arrow color */
+  /* positioning */
+  position: absolute;
+  bottom: 15px;
+  right: -1em;
+}
+
+/*.messages > div:last-child {
+    margin-bottom: 50px;
+}*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  border-top: 1px solid #e6e6e6;
+  height: 70px;
+  background-color: white;
+  z-index: 1000;
+}
+.footer .message-input {
+  width: 75%;
+  margin: 0.5em 0.5em 0.5em 1.5em;
+  height: 20px;
+  padding: .5em;
+  border: 0;
+  color: #546979;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-family: "OmnesLight", "Helvetica Neue";
+  font-size: 20px;
+}
+.footer span {
+  font-size: 20px;
+  font-weight: 400;
+  float: right;
+  margin: 1.2em 1.5em 0 0;
+  cursor: pointer;
+  color: #44b6ff;
+}
+
+.status {
+  text-align: center;
+  color: #999;
+}
+
+@media (max-width: 580px) {
+  .footer .message-input {
+    width: 60%;
+  }
+}

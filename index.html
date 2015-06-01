@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Gone by SMS</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-images">
+            <img src="images/gone-hero-logo-1.png" alt="" class="gone-hero-1">
+            <img src="images/gone-hero-logo-2.png" alt="" class="gone-hero-2">
+          </div>
+          <h1>Gone by SMS</h1>
+          <h3>The Most Effective Selling Platform<br>now only a text away.</h3>
+          <h2 class="number"><a href="imessage://(123)456-7890">123.456.7890</a></h2>
+        </div>
+      </section>
+      <!-- Intro -->
+      <section class="intro">
+        <div class="blue-gradient">
+          <div class="container">
+            <div class="eight columns">
+              <h2>Send a text directly to Gone's pricing floor.</h2>
+              <h3>Check the value of your items, schedule in-home pickups, modify and monitor your sales, and cash out through text message. </h3>
+            </div>
+            <div class="four columns">
+              <img class="iphone-1" src="images/iphone-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Messages-->
+    <section class="chat" ng-app="chat" ng-controller="chatController">
+      <section id="messages" class="messages clearfix">
+        <div class="container">
+          <div class="status"><p>You're chatting with Gone!</p></div>
+          <div ng-repeat="message in messages" class="{{message.from}}">
+            <p>{{message.text}}</p>
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
+      <section class="footer clearfix">
+        <div class="container">
+          <input autofocus type="text" id="message-input" class="message-input" ng-model="chatText" ng-enter="triggerSubmit()" autocomplete="off" placeholder="Enter Your Message" autofocus/>
+          <span ng-click="addMessage()">Send</span>
+        </div>
+      </section>
+    </section>
+        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
