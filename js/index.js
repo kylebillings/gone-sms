@@ -36,7 +36,12 @@ angular.module('chat', [])
             $scope.addMessage();
 
             //window.scrollTo(0,document.body.scrollHeight);
-            $("html, body").animate({ scrollTop: $(document).height()-$(window).height(), duration: 3600, easing: "easeInOutBounce"});
+            setTimeout(function(){
+                $("html, body").animate({ scrollTop: $(document).height()-$(window).height()}, {
+                    duration: 900, 
+                    easing: "easeOutQuint"
+                });
+            }, 1);
         }
 
     }])
