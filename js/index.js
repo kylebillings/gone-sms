@@ -37,7 +37,7 @@ angular.module('chat', [])
 
             //window.scrollTo(0,document.body.scrollHeight);
             setTimeout(function(){
-                $("html, body").animate({ scrollTop: $(document).height()-$(window).height()}, {
+                $("html, body").stop().animate({ scrollTop: $(document).height()-$(window).height()}, {
                     duration: 900, 
                     easing: "easeOutQuint"
                 });
