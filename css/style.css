@@ -137,7 +137,17 @@ h3 {
 .intro {
   color: #fff;
 }
-
+.arrow-down {
+  position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 50%;
+    margin-left: -20px;
+    margin-top:-4px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
 .blue-gradient {
     background: #a0daff; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -309,7 +319,7 @@ h3 {
   color: #3A4954;
 }
 .map-container p {
-  color: #3A4954;
+  color: #44b6ff;
 }
 .map-container path {
   fill: #546979 !important;
@@ -322,6 +332,9 @@ h3 {
 .map {
 position: relative;
 margin: 0 10% 10% 10%;
+}
+.map p {
+  color: #fff;
 }
 .map-markers {
   list-style: none;
@@ -340,7 +353,7 @@ margin: 0 10% 10% 10%;
   content: '';
   height: 2em;
   left: 0;
-  margin: -.5em 0 0 -.5em;
+  margin: -8.5px 0 0 -8.5px;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -378,7 +391,7 @@ margin: 0 10% 10% 10%;
   position: absolute;
   bottom: 0;
   transform: translate(-50%, -2em);
-  width: 20em;
+  width: 10em;
   z-index: 999;
   color: #fff;
 }

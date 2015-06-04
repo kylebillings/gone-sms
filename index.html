@@ -56,7 +56,7 @@
             <img src="images/gone-hero-logo-2.png" alt="" class="gone-hero-2">
           </div>
           <h1><a href="">1 415 535 1234</a></h1>
-          <h3>Put Gone's powerful selling service to work for you with a text message.</h3>
+          <h3>Start selling your things with a text.</h3>
           <!--<h2 class="number"><a href="sms:508-479-8905">123.456.7890</a></h2>-->
         </div>
       </section>
@@ -66,14 +66,14 @@
         "img/vb.png"> <img alt="GIGAOM" src="img/gigaom.png"> <img alt=
         "TechCrunch" src="img/techcrunch.png"> <img alt="SlashGear" class=
         "slashgear-logo" src="img/slashgear.png"></div>
+        <div class="arrow-down"></div>
       <!-- Intro -->
       <section class="intro">
         <div class="blue-gradient">
           <div class="container">
             <div class="eight columns">
-              <h1>Start Selling With a Text</h1>
-              <img style="width: 100px;" src="images/dollar.png" alt="" class="responsive">
-              <h3>Check the value of your items, schedule in-home pickups, modify and monitor your sales, and cash out through text message. </h3>
+              <h2>One-on-One </h2>
+              <h3>Gone’s comprehensive selling network is now available directly by SMS. Check the value of your items, modify and monitor your sales, and collect your earnings with one-on-one assistance from Gone. </h3>
             </div>
             <div class="four columns">
               <img class="iphone-1" src="images/iphone-1.png" alt="">
@@ -85,6 +85,7 @@
         <div class="container">
           <h1 class="remove-bottom gone-blue">Available Nationwide</h1>
           <p class="gone-blue">With Concierge Service Available in San Francisco & Austin.</p>
+          <br><br>
           <div class="map">
             <ul class="map-markers">
               <li class="map-marker map-marker-san-francisco">
@@ -100,7 +101,7 @@
               <li class="map-marker map-marker-austin">
                 <a href="#">Austin</a>
                 <div class="map-marker-info">
-                  <div class="map-marker-info-inner animated fadeIn">
+                  <div class="map-marker-info-inner">
                     <main>
                       <p>Austin, TX</p>
                     </main>
@@ -317,6 +318,7 @@
         <div class="container">
           <div class="text-center">
             <h1>Try it out!</h1>
+            <br>
           </div>
           <div class="status"><p>You're chatting with Gone!</p></div>
           <div ng-repeat="message in messages" class="{{message.from}}">
@@ -326,7 +328,7 @@
       </section>
       <!--Footer-->
       <section class="footer clearfix animated slideInUp">
-        <input autofocus type="text" id="message-input" class="message-input" ng-model="chatText" ng-enter="triggerSubmit()" autocomplete="off" placeholder="Enter Your Message" autofocus/>
+        <input autofocus type="text" id="message-input" class="message-input" ng-model="chatText" ng-enter="triggerSubmit()" autocomplete="off" placeholder="Enter Your Message"/>
         <span ng-click="addMessage()">Send</span>
       </section>
     </section>
