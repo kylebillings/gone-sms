@@ -75,7 +75,7 @@ html, body {
 }
 html a, body a {
   text-decoration: none;
-  color: #546979;
+  color: #44b6ff;
 }
 html p, body p {
   line-height: 1.3em;
@@ -83,6 +83,7 @@ html p, body p {
 p {
   font-family: "Omnes";
   font-size: 16px;
+  line-height: 20.8px;
 }
 
 h1 {
@@ -94,21 +95,24 @@ h1 {
 h2 {
   font-family: "OmnesThin";
   font-weight: 100;
-  font-size: 4em; 
+  font-size: 36px; 
 }
 h3 {
-  font-family: "OmnesThin";
+  font-family: "OmnesLight";
+  font-weight: 100;
+  font-size: 21px;
 }
 
 /* Hero Image Stack */
 .hero {
   text-align: center;
+  padding-bottom: 60px;
 }
 .hero h1 {
   line-height: 1em;
   margin-top: 50px;
   margin-bottom: 5px; 
-  color: #44b6ff;
+  color: #546979;
 }
 .hero-images {
   margin: 0 auto;
@@ -234,10 +238,15 @@ h3 {
   height: 70px;
   background-color: white;
   z-index: 1000;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -ms-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay:2s;
 }
 .footer .message-input {
   width: 75%;
-  margin: 0.5em 0.5em 0.5em 1.5em;
+  margin: 15px 0.5em 0.5em 1.5em;
   height: 20px;
   padding: .5em;
   border: 0;
@@ -271,7 +280,7 @@ h3 {
 #media-partners{
   width: 100%;
   padding-bottom: 21px;
-  background-color: #E8E8E8;
+  background-color: #fff;
   text-align: center;
 }
 #media-partners img{
@@ -291,7 +300,121 @@ h3 {
   max-width: 130px;
   max-height: 60px;
 }
-
+/* Map */
+.map-container {
+  background-color: #fff;
+  text-align: center;
+}
+.map-container h1 {
+  color: #3A4954;
+}
+.map-container p {
+  color: #3A4954;
+}
+.map-container path {
+  fill: #546979 !important;
+  cursor: default;
+}
+.map-container svg {
+  height: auto;
+  max-width: 100%;
+}
+.map {
+position: relative;
+margin: 0 10% 10% 10%;
+}
+.map-markers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.map-marker {
+  position: absolute;
+}
+.map-marker:after {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: pop;
+  border-radius: 50%;
+  border: 1px solid #44b6ff;
+  content: '';
+  height: 2em;
+  left: 0;
+  margin: -.5em 0 0 -.5em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 2em;
+}
+.map-marker:hover .map-marker-info {
+  display: block;
+}
+.map-marker a {
+  background-color: #44b6ff;
+  border-radius: 50%;
+  height: 1em;
+  display: block;
+  text-indent: -9999px;
+  width: 1em;
+}
+.map-marker-san-francisco {
+  left: 1%;
+  top: 46%;
+}
+.map-marker-san-francisco:after {
+  animation-delay: 2s;
+}
+.map-marker-austin {
+  left: 47%;
+  top: 79%;
+}
+.map-marker-austin:after {
+  animation-delay: 2s;
+}
+.map-marker-info {
+  text-align: center;
+  display: none;
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -2em);
+  width: 20em;
+  z-index: 999;
+  color: #fff;
+}
+.map-marker-info main {
+  background-color: #44b6ff;
+  border-radius: 4px;
+  color: #fff;
+  padding: .5em 1em;
+}
+.map-marker-info-inner {
+  border-radius: .5em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  font-size: .875em;
+  color: #fff;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -ms-animation-duration:1s;
+  -o-animation-duration:1s;
+  animation-duration:1s;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  8% {
+    opacity: .4;
+  }
+  10% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.animate-pop {
+  animation-duration: 1s;
+  animation-name: pop;
+}
 /* About */
 .about {
   font-family: "OmnesThin";
@@ -406,6 +529,12 @@ span.dot {
 .text-center {
   text-align: center;
 }
+.gone-blue {
+  color: #44b6ff;
+}
+.dark {
+  background-color: #546979;
+}
 @media screen and (max-width: 1000px) {
   
   /*.fixed {display: none;}*/
@@ -419,6 +548,11 @@ span.dot {
 }
 .faq-container a {
   text-decoration: none;
+  font-size: 21px;
+  font-family: "OmnesLight";
+}
+.faq-container p {
+  margin-top: 5px;
 }
 .faq-container ul {
   list-style: none;
@@ -446,3 +580,6 @@ span.dot {
   background: rgba(68,182,255,.7);
 }
 /* ## FAQ CSS ## */
+.remove-bottom {
+  margin-bottom: 0px;
+}
