@@ -579,7 +579,7 @@ span.dot {
     text-align: center;
   }
   .chat {
-    text-align: left;
+    display: none;
   }
   .hero h1 {
     font-size: 42px;
