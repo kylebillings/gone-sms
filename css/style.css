@@ -275,7 +275,8 @@ h3 {
 
 .status {
   text-align: center;
-  color: #999;
+  color: #44b6ff;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 580px) {
@@ -562,6 +563,28 @@ span.dot {
   /*.fixed {display: none;}*/
 
 }
+@media screen and (max-width: 880px) {
+  
+  h1 {
+    font-family: "OmnesThin";
+    font-size: 42px;
+  }
+  .hero h1 {
+    font-size: 64px;
+  }
+
+}
+@media screen and (max-width: 475px) {
+  body {
+    text-align: center;
+  }
+  .chat {
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+}
 /* ## FAQ CSS ## */
 .faq-container {
   padding-top: 35px;
@@ -608,6 +631,13 @@ span.dot {
 .remove-bottom {
   margin-bottom: 0px;
 }
+@media (max-width: 580px) {
+  .sidebar-image img: 
+}
+.sidebar-image {
+  text-align: center;
+}
 .sidebar-image img{
   width: 100%;
+  max-width: 1260px;
 }

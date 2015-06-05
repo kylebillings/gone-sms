@@ -6,9 +6,6 @@ angular.module('chat', [])
         $scope.messages = [{
             text: "Hey! My name is Kyle. I'll answer any questions you have about selling your things.",
             from: 'message-remote'
-        }, {
-            text: "Do you have anything in particular you'd like to sell?",
-            from: 'message-remote'
         }];
         //Function to add message
         var $messagesContainer=$(".messages")
