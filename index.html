@@ -67,18 +67,26 @@
         "TechCrunch" src="img/techcrunch.png"> <img alt="SlashGear" class=
         "slashgear-logo" src="img/slashgear.png"></div>
         <div class="arrow-down"></div>
+        <div class="container">
+            <hr>
+        </div>
       <!-- Intro -->
       <section class="intro">
-        <div class="blue-gradient">
+        <div class="">
           <div class="container">
             <div class="eight columns">
-              <h2>One-on-One </h2>
+              <h1>One-on-One</h1>
               <h3>Gone’s comprehensive selling network is now available directly by SMS. Check the value of your items, modify and monitor your sales, and collect your earnings with one-on-one assistance from Gone. </h3>
             </div>
             <div class="four columns">
               <img class="iphone-1" src="images/iphone-1.png" alt="">
             </div>
           </div>
+        </div>
+      </section>
+      <section class="intro-2">
+        <div class="sidebar-image">
+            <img src="img/gone-team.jpg" alt="Gone Team"/>
         </div>
       </section>
       <section class="map-container">
@@ -91,21 +99,21 @@
               <li class="map-marker map-marker-san-francisco">
                 <a href="#">San Francisco</a>
                 <div class="map-marker-info">
-                  <div class="map-marker-info-inner animate-bounce-in">
+                  <!--<div class="map-marker-info-inner animate-bounce-in">
                     <main>
                       <p>San Francisco, CA</p>
                     </main>
-                  </div>
+                  </div>-->
                 </div>
               </li>
               <li class="map-marker map-marker-austin">
                 <a href="#">Austin</a>
                 <div class="map-marker-info">
-                  <div class="map-marker-info-inner">
+                  <!--<div class="map-marker-info-inner">
                     <main>
                       <p>Austin, TX</p>
                     </main>
-                  </div>
+                  </div>-->
                 </div>
               </li>
             </ul>
@@ -234,6 +242,9 @@
         </div>
       </section>
       <!-- About Gone -->
+      <div class="sidebar-image">
+            <img src="img/gone-team-1.jpg" alt="Gone Team">
+        </div>
       <section class="about">
         <div class="container">
           <h1>Let's Sell Together</h1>
@@ -256,9 +267,12 @@
           </div>
         </div>
       </section>
+      <div class="container">
+          <hr>
+      </div>
       <!-- FAQ -->
       <section id="faq" class="faq">
-        <div class="blue-gradient">
+        <div class="">
           <div class="container faq-container">
             <div class="text-center">
               <h2>Frequently Asked Questions</h2>
@@ -312,13 +326,15 @@
               </div>
         </div>
       </section>
+        <div class="sidebar-image">
+            <img src="img/gone-team-2.jpg" alt="Gone Team">
+        </div>
       <!--Messages-->
     <section class="chat" ng-app="chat" ng-controller="chatController">
       <section id="messages" class="messages clearfix">
         <div class="container">
           <div class="text-center">
             <h1>Try it out!</h1>
-            <br>
           </div>
           <div class="status"><p>You're chatting with Gone!</p></div>
           <div ng-repeat="message in messages" class="{{message.from}}">
