@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- twitter -->
+    <meta name="twitter:widgets:theme" content="light">
+    <meta name="twitter:widgets:link-color" content="#44B6FF">
+    <meta name="twitter:widgets:border-color" content="#fff">
+
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
+    "57x57">
+    <link href="apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes=
+    "60x60">
+    <link href="apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
+    "72x72">
+    <link href="apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
+    "76x76">
+    <link href="apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
+    "114x114">
+    <link href="apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
+    "120x120">
+    <link href="apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
+    "144x144">
+    <link href="apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
+    "152x152">
+    <link href="apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes=
+    "180x180">
+    <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="android-chrome-192x192.png" rel="icon" sizes="192x192" type=
+    "image/png">
+    <link href="favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="#2d89ef" name="msapplication-TileColor">
+    <meta content="/mstile-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
+
+    <title>Gone by SMS | Waitlist</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+      <!-- Hero -->
+      <section class="waitlist hero">
+        <div class="container">
+        <h2>Thank you for joining the waitlist for GoneSMS!</h2>
+
+          <div id="position-container"></div>
+          <div class="position">     
+            <div class="position-outer">
+              <div class="position-inner">
+                <div class="fill position-bar" role="positionbar">
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>We’re quickly accepting new users, but if you’d prefer a shorter wait, you can earn a spot on the VIP waiting list by referring your friends. We offer earlier access, rewards, and privileges to VIP listers.<br/><br/>Share your unique link below; we’ll automatically transfer you when a friend signs up!</p>
+          <h3 class="remove-bottom"><a href="">gonesms.com/invite/03fsdh</a></h3>
+          <p>Click to Copy Link</p>
+          <button>Share on Facebook</button>
+          <button>Share on Twitter</button>
+        </div>
+      </section>
+      <div id="media-partners"><img alt="Techstars" class="techstars-logo"
+        src="img/techstars.png"> <img alt="CNN" src="img/cnn.png"> <img alt=
+        "xConomy" src="img/xconomy.png"> <img alt="VentureBeat" src=
+        "img/vb.png"> <img alt="GIGAOM" src="img/gigaom.png"> <img alt=
+        "TechCrunch" src="img/techcrunch.png"> <img alt="SlashGear" class=
+        "slashgear-logo" src="img/slashgear.png"></div>
+        <!--<div class="arrow-down"></div>-->
+        <div class="container">
+            <hr class="line">
+        </div>
+      <!-- Intro -->
+      <section class="intro">
+        <div class="">
+          <div class="container">
+            <div class="eight columns">
+              <h1>Join the VIP Waitlist for a better wait.</h1>
+              <h3>Refer a friend using one of the links above to automatically join a shorter waitlist with additional perks.</h3>
+              <h3></h3>
+              <h3></h3>
+            </div>
+            <div class="four columns">
+              <img class="iphone-1" src="images/iphone-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+          <hr>
+      </div>
+      <div class="hero">
+          <a href=""><h1>123 456 7890</h1></a>
+          <p>Just say <span class="gone-blue">hello</span>, we'll help you get started.</p>
+      </div>
+      <div class="container">
+          <hr>
+      </div>
+        <!--<div class="sidebar-image">
+            <img src="img/gone-team.jpg" alt="Gone Team"/>
+        </div>-->
+      <!-- About Gone -->
+        <div class="sidebar-image">
+            <img src="img/gone-team-2.jpg" alt="Gone Team">
+        </div>
+        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/progressbar.min.js"></script>
+            <!-- ## FAQ JAVASCRIPT ## -->
+    <script>
+    $('.toggle').click(function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    if ($this.next()[0].classList.contains('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});</script>
+<script type="text/javascript">
+var circle = new ProgressBar.Circle('#position-container', {
+    color: '#44b6ff',
+    strokeWidth: 1,
+    trailWidth: 1,
+    duration: 1500,
+    easing: 'easeInOut',
+    text: {
+        value: '0'
+    },
+    step: function(state, bar) {
+        bar.setText((bar.value() * 7712).toFixed(0));
+    }
+});
+
+circle.animate(.45, function() {
+    circle.animate(.45);
+})
+</script>
+<!-- ## END OF FAQ JAVASCRIPT ## -->
+  </body>
+</html>
