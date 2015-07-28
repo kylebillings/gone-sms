@@ -633,6 +633,9 @@ span.dot {
 .remove-bottom {
   margin-bottom: 0px;
 }
+.remove-top {
+  margin-top: 0px;
+}
 @media (max-width: 580px) {
   .sidebar-image img: 
 }
@@ -694,6 +697,10 @@ span.dot {
   color: #44b6ff;
   background: none;
 }
+.waitlist button:hover {
+  background-color: #44b6ff;
+  color: #fff;
+}
 #position-container {
     width: 100%;
     height: 100%;
@@ -708,4 +715,7 @@ span.dot {
 #position-container > svg {
     width: 100%;
     display: block;
+}
+.gray {
+  color: #e1e1e1;
 }
