@@ -636,6 +636,9 @@ span.dot {
 .remove-top {
   margin-top: 0px;
 }
+.add-bottom {
+  margin-bottom: 50px;
+}
 @media (max-width: 580px) {
   .sidebar-image img: 
 }
@@ -676,11 +679,14 @@ span.dot {
     margin-left: -7px;
 }
 .waitlist {
-  background: url(../img/white-gone-team-3.jpg) no-repeat center center fixed; 
+  background: url(../img/white-gone-team-3.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;;
+}
+.waitlist sup {
+  color: #C7CACB;
 }
 .waitlist h1 {
   font-size: 144pt;
@@ -700,6 +706,7 @@ span.dot {
 .waitlist button:hover {
   background-color: #44b6ff;
   color: #fff;
+
 }
 #position-container {
     width: 100%;
@@ -716,6 +723,46 @@ span.dot {
     width: 100%;
     display: block;
 }
+.blue {
+  color: #44b6ff;
+}
 .gray {
-  color: #e1e1e1;
+  color: #C7CACB;
+}
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+  font-size: 16pt;
+  font-family: "OmnesLight";
+}
+  
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #C7CACB;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.vip {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
