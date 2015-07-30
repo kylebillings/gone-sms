@@ -650,7 +650,6 @@ span.dot {
   max-width: 1260px;
 }
 #home-page-image    {  width:100%;
-           height:200px;
           margin:5% auto 0 auto; 
           background:url(../img/gone-team-2.jpg);
   background-size:cover;
@@ -658,19 +657,21 @@ overflow:hidden;}
 
 .overlay    {  background:rgba(255,255,255,.85);
                text-align:center;
-               padding:90px 0 300px 0;
+               padding:90px 0 90px 0;
                opacity:0;
                -webkit-transition: opacity .25s ease;
 -moz-transition: opacity .25s ease;}
 
 #home-page-image:hover .overlay {
                opacity:1;}
-
+@media (max-width: 580px) {
+  .overlay {
+    opacity: 1;
+  }
+}
 .home-page-link{  
-  font-family:Helvetica;
-               font-weight:100;
                color:#44b6ff;
-               font-size:21px;}
+               font-size:16px;}
 
 
 .line {
@@ -795,4 +796,86 @@ overflow:hidden;}
 }
 .purple {
   color: #8512FE;
+}
+/* Input Form */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css);
+form {
+  color: #44b6ff;
+  display: block;
+  margin: 0 auto;
+  font-size: 16pt;
+  font-family: "OmnesLight";
+  text-align: center;
+}
+form input {
+  border: none;
+  padding: 1em 1em;
+}
+form input[type="tel"] {
+  background: #fff;
+  position: relative;
+  z-index: 100;
+}
+form input[type="tel"]:focus {
+  outline: none;
+  text-align: center;
+}
+form input[type="submit"] {
+  border: 1px solid #44b6ff;
+  background: #fff;
+  border-radius: 4px;
+  font-weight: 100;
+  color: #44b6ff;
+  -webkit-transition: background .3 ease;
+  z-index: 300;
+  position: relative;
+}
+form input[type="submit"]:hover {
+  background: #44b6ff;
+  color: #fff;
+}
+
+.sendApp:not(.sendApp--active) input[type='tel'] {
+  transition: transform .3s ease;
+  margin: 0 auto;
+  z-index: 100;
+  text-align: center;
+}
+.sendApp:not(.sendApp--active) input[type='submit'] {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: opacity .3s ease, transform .3s ease;
+  z-index: 1;
+}
+@media (min-width: 580px) {
+  .sendApp:not(.sendApp--active) input[type='tel'] {
+  transform: translateX(55px);
+}
+}
+.sendApp input[type='tel'] {
+  transform: translateX(0);
+  transition: transform .3s ease;
+}
+.sendApp input[type='submit'] {
+  transform: translateX(0);
+  opacity: 1;
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 50, 73, 0.4);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 50, 73, 0.4);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 50, 73, 0.4);
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 50, 73, 0.4);
 }

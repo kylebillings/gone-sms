@@ -55,8 +55,13 @@
             <img src="images/gone-hero-logo-1.png" alt="" class="gone-hero-1">
             <img src="images/gone-hero-logo-2.png" alt="" class="gone-hero-2">
           </div>
-          <h1><a href="">1 415 535 1234</a></h1>
+          <h1><a href="">415 535 1234</a></h1>
           <h3>Start selling your things with a text.</h3>
+          <p>Or Enter Your Number Below</p>
+          <form class="sendApp">
+            <input type="tel" value="" placeholder="(123) 456-7890" />
+            <input type="submit" value="Submit" class="animated" disabled/>
+          </form>
           <!--<h2 class="number"><a href="sms:508-479-8905">123.456.7890</a></h2>-->
         </div>
       </section>
@@ -379,6 +384,30 @@
         $this.next().slideToggle(350);
     }
 });</script>
+<script type="text/javascript">
+;(function($, window, document, undefined) {
+    'use strict';
+
+    // validation
+    var form = '.sendApp',
+        className = 'sendApp--active',
+        number = 'input[type="tel"]',
+        submit = 'input[type="submit"]';
+
+    $(form).each(function() {
+        var $form = $(this),
+            $number = $form.find(number),
+            val = '';
+
+        $number.on('keyup.addClassWhenTel', function() {
+            val = $number.val();
+            var status =  /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(val);
+            $(submit).prop('disabled', !status);
+            $form.toggleClass(className, val != '' && status );
+        });
+    });
+})(jQuery, window, document);
+</script>
 <!-- ## END OF FAQ JAVASCRIPT ## -->
   </body>
 </html>
