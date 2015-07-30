@@ -40,7 +40,7 @@
     <meta content="/mstile-144x144.png" name="msapplication-TileImage">
     <meta content="#ffffff" name="theme-color">
 
-    <title>Gone by SMS | Waitlist</title>
+    <title>Gone by SMS | VIP Waitlist</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/animate.css">
@@ -63,15 +63,15 @@
             </div>
           </div>
           <div class="container add-bottom">
-          <p><span class="gray">7202 Users Currently Waiting</span></p>
+          <p><span class="gray">373 VIP Users Currently Waiting</span></p>
           </div>
           <div class="strike">
-              <span>Move to the shorter VIP waitlist<br/>in exchange for referring a friend.</span>
+              <span><span class="blue">1</span> Friend Referred</span>
           </div>
           <h3 class="remove-bottom"><a href="">gonesms.com/invite/03fsdh</a></h3>
           <p class="remove-top"><sup>Click to Copy Link</sup></p>
-          <button>Share on Facebook</button>
-          <button>Share on Twitter</button>
+          <button class="waitlist-button">Share on Facebook</button>
+          <button class="waitlist-button">Share on Twitter</button>
         </div>
       </section>
         <!--<div class="arrow-down"></div>-->
@@ -79,15 +79,36 @@
       <section class="vip">
         <div class="">
           <div class="container">
-            <div class="eight columns">
-              <h1>Join the VIP Waitlist for a better wait.</h1>
-              <h3>Refer a friend using one of the links above to automatically join a shorter waitlist with additional perks.</h3>
-              <button>Refer a friend</button>
-            </div>
-            <div class="four columns">
-              <img class="iphone-1" src="images/iphone-1.png" alt="">
+            <div class="twelve columns centered">
+              <h1 class="remove-bottom">VIP Rewards</h1>
+              <h3>Referrals: 3</h3>
             </div>
           </div>
+          <div class="container add-bottom">
+            <div class="four columns centered">
+              <h1>$15</h1>
+              <p>Cashout Bonus</p>
+            </div>
+            <div class="four columns centered">
+              <h1>3</h1>
+              <p>Chocolate Coins</p>
+            </div>
+            <div class="four columns centered">
+              <h1>300</h1>
+              <p>Karma Points</p>
+            </div>
+          </div>
+          </div>
+          <div class="strike">
+              <span>Refer more friends to increase your rewards.</span>
+          </div>
+          <div class="container centered">
+            <h3 class="remove-bottom"><a href="">gonesms.com/invite/03fsdh</a></h3>
+            <p class="remove-top"><sup>Click to Copy Link</sup></p>
+            <button class="waitlist-button">Share on Facebook</button>
+            <button class="waitlist-button">Share on Twitter</button>
+          </div>
+        
         </div>
       </section>
         <!--<div class="sidebar-image">
@@ -129,12 +150,12 @@ var circle = new ProgressBar.Circle('#position-container', {
         value: '0',
     },
     step: function(state, bar) {
-        bar.setText(((1-(bar.value())) * 7202).toFixed(0));
+        bar.setText(((1-(bar.value())) * 373).toFixed(0));
     }
 });
 
-circle.animate(.48264, function() {
-    circle.animate(.48264);
+circle.animate(.912, function() {
+    circle.animate(.912);
 })
 </script>
 <!-- ## END OF FAQ JAVASCRIPT ## -->

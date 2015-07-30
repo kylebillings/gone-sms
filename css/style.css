@@ -694,7 +694,7 @@ span.dot {
 .waitlist .container {
   padding-top: 20px;
 }
-.waitlist button {
+.waitlist-button {
   padding: 10px;
   width: 180px;
   margin: 5px;
@@ -703,7 +703,7 @@ span.dot {
   color: #44b6ff;
   background: none;
 }
-.waitlist button:hover {
+.waitlist-button:hover {
   background-color: #44b6ff;
   color: #fff;
 
@@ -765,4 +765,10 @@ span.dot {
 .vip {
   padding-bottom: 50px;
   padding-top: 50px;
+}
+.centered {
+  text-align: center;
+}
+.purple {
+  color: #8512FE;
 }
