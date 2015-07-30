@@ -649,6 +649,30 @@ span.dot {
   width: 100%;
   max-width: 1260px;
 }
+#home-page-image    {  width:100%;
+           height:200px;
+          margin:5% auto 0 auto; 
+          background:url(../img/gone-team-2.jpg);
+  background-size:cover;
+overflow:hidden;}
+
+.overlay    {  background:rgba(255,255,255,.85);
+               text-align:center;
+               padding:90px 0 300px 0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+#home-page-image:hover .overlay {
+               opacity:1;}
+
+.home-page-link{  
+  font-family:Helvetica;
+               font-weight:100;
+               color:#44b6ff;
+               font-size:21px;}
+
+
 .line {
     width:100%;
 }
