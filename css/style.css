@@ -818,6 +818,7 @@ form input[type="tel"] {
   background: #fff;
   position: relative;
   z-index: 100;
+  margin-bottom: 10px;
 }
 form input[type="tel"]:focus {
   outline: none;
@@ -858,6 +859,7 @@ form input[type="submit"]:hover {
 .sendApp input[type='tel'] {
   transform: translateX(0);
   transition: transform .3s ease;
+  text-align: center;
 }
 .sendApp input[type='submit'] {
   transform: translateX(0);
