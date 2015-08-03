@@ -639,6 +639,9 @@ span.dot {
 .add-bottom {
   margin-bottom: 50px;
 }
+.add-bottom-half {
+  margin-bottom: 25px;
+}
 @media (max-width: 580px) {
   .sidebar-image img: 
 }
@@ -764,8 +767,8 @@ overflow:hidden;}
 .strike > span {
   position: relative;
   display: inline-block;
-  font-size: 16pt;
-  font-family: "OmnesLight";
+  font-size: 12pt;
+  font-family: "Omnes";
 }
   
 .strike > span:before,
@@ -809,7 +812,7 @@ form {
 }
 form input {
   border: none;
-  padding: 1em 1em;
+  padding: 10px 15px 10px 15px;
 }
 form input[type="tel"] {
   background: #fff;
@@ -849,7 +852,7 @@ form input[type="submit"]:hover {
 }
 @media (min-width: 429px) {
   .sendApp:not(.sendApp--active) input[type='tel'] {
-  transform: translateX(55px);
+  transform: translateX(48px);
 }
 }
 .sendApp input[type='tel'] {
