@@ -193,6 +193,9 @@ h3 {
   float: left;
   clear: both;
 }
+.message-remote.example {
+  max-width: 100% !important;
+}
 .message-remote:before {
   content: ' ';
   height: 0;
