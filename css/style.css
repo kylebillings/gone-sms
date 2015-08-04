@@ -807,7 +807,7 @@ form input[type="tel"] {
   position: relative;
   z-index: 100;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #44b6ff;
 }
 form input[type="tel"]:focus {
   outline: none;
