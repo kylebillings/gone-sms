@@ -595,7 +595,7 @@ span.dot {
 }
 .faq-container a {
   text-decoration: none;
-  font-size: 21px;
+  font-size: 16px;
   font-family: "OmnesLight";
 }
 .faq-container p {
@@ -769,6 +769,7 @@ overflow:hidden;}
   display: inline-block;
   font-size: 12pt;
   font-family: "Omnes";
+  color: #C7CACB;
 }
   
 .strike > span:before,
