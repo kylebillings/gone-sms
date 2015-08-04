@@ -854,7 +854,7 @@ form input[type="submit"]:hover {
 }
 @media (min-width: 429px) {
   .sendApp:not(.sendApp--active) input[type='tel'] {
-  transform: translateX(48px);
+  transform: translateX(55px);
 }
 }
 .sendApp input[type='tel'] {
