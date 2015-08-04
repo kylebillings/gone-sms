@@ -565,16 +565,15 @@ span.dot {
   body {
     text-align: center;
   }
-  .chat {
+  /*.chat {
     display: none;
-  }
+  }*/
   .hero h1 {
     font-size: 42px;
   }
 }
 /* ## FAQ CSS ## */
 .faq-container {
-  padding-top: 35px;
   padding-bottom: 35px;
   color: #546979;
 }
@@ -805,6 +804,7 @@ form input[type="tel"] {
   position: relative;
   z-index: 100;
   margin-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
 }
 form input[type="tel"]:focus {
   outline: none;
