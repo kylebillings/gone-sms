@@ -166,7 +166,11 @@ h3 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-
+@media (max-width: 549px) {
+  .iphone-1 {
+    margin-top: 10px;
+  }
+}
 .chat {
   position: relative;
   width: 100%;
@@ -176,7 +180,7 @@ h3 {
 
 /* Messages */
 .messages {
-  padding-bottom: 75px;
+  padding-bottom: 40px;
   font-size: 14px;
   line-height: 1.4em;
 }
