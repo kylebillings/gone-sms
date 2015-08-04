@@ -808,6 +808,7 @@ form input[type="tel"] {
   z-index: 100;
   margin-bottom: 10px;
   border-bottom: 1px solid #44b6ff;
+  border-radius: 0px;
 }
 form input[type="tel"]:focus {
   outline: none;
