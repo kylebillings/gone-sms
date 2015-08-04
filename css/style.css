@@ -319,7 +319,6 @@ h3 {
   color: #3A4954;
 }
 .map-container p {
-  color: #44b6ff;
 }
 .map-container path {
   fill: #546979 !important;
@@ -448,9 +447,6 @@ margin: 0 10% 10% 10%;
 .about h1 {
   margin-bottom: 0;
 }
-.about span {
-  color: #44b6ff;
-}
 svg {
   display: inline-block;
   height: 100%;
@@ -473,7 +469,7 @@ path:hover {
   width: 60%;
   top: 50%;
   margin-top: -20px;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 40px;
   overflow: hidden;
   text-align: center;
@@ -500,38 +496,27 @@ path:hover {
   fill: #8EDE52;
 }
 
-.pickup {
+.commission {
   fill: #44b6ff;
 }
 
-.pickup:hover {
-  fill: #f1c40f;
+.commission:hover {
+  fill: #4BC8FF;
 }
 
 .shipping {
-  fill: #3DA3E5;
+  fill: #ffcf43;
 }
 
 .shipping:hover {
-  fill: #9b59b6;
+  fill: #FFE44A;
 }
-
-.listing {
-  fill: #3692CD;
+.gone-yellow {
+  color: #ffcf43;
 }
-
-.listing:hover {
-  fill: #e74c3c;
+.gone-green {
+  color: #72D627;
 }
-
-.fulfillment {
-  fill: #3083B8;
-}
-
-.fulfillment:hover {
-  fill: #2ecc71;
-}
-
 span.dot {
   display: inline-block;
   width: 20px;

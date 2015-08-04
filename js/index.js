@@ -79,7 +79,7 @@ $(function() {
 
             var defaultOptions = {
                 id         : '#qtpie',
-                defaultMsg : 'Cash Breakdown',
+                defaultMsg : 'Breakdown',
                 radius     : 80,
                 list       : false,
                 hover      : true
